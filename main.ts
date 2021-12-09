@@ -10,6 +10,7 @@ input.onButtonPressed(Button.A, function () {
         }
     }
 })
+// 先添加1~24的數字進表單
 input.onButtonPressed(Button.AB, function () {
     狀態 = 1
     basic.clearScreen()
@@ -17,6 +18,7 @@ input.onButtonPressed(Button.AB, function () {
     for (let index = 0; index <= 24; index++) {
         led_random.push(index)
     }
+    // 
     for (let index2 = 0; index2 < 燈數; index2++) {
         亮起(randint(0, led_random.length))
     }
